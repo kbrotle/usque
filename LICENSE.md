@@ -29,3 +29,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 Note: This is a personal fork maintained for learning and experimentation.
 No affiliation with the original author is implied.
+
+Fork notes:
+- Studying the QUIC/WireGuard tunnel implementation
+- Any modifications here are purely experimental and not intended for production use
