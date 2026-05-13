@@ -9,10 +9,14 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o usque -ldflags="-s -w" .
+# -trimpath helps with reproducible builds and removes local path info from binaries
+RUN go build -o usque -ldflags="-s -w" -trimpath .
 
 # scratch won't be enough, because we need a cert store
 FROM alpine:latest
+
+# Keep the image up to date with latest security patches
+RUN apk --no-cache upgrade
 
 WORKDIR /app
 
