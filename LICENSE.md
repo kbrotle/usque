@@ -33,3 +33,4 @@ No affiliation with the original author is implied.
 Fork notes:
 - Studying the QUIC/WireGuard tunnel implementation
 - Any modifications here are purely experimental and not intended for production use
+- Started: January 2025; primary interest is understanding the QUIC handshake and key exchange flow
