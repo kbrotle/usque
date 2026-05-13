@@ -53,9 +53,8 @@ Usque is an open-source reimplementation of the Cloudflare WARP client's MASQUE 
 > **My notes so far:**
 > - SOCKS5 mode is the easiest way to get started — just point your browser's proxy settings at `127.0.0.1:1080`.
 > - Tested on Linux `amd64` only (same as upstream). Haven't tried Windows yet.
+> - If you're just experimenting, HTTP proxy mode on port `8080` is also handy for quick `curl` tests: `curl --proxy http://127.0.0.1:8080 https://cloudflare.com/cdn-cgi/trace`
 
 ## Installation
 
-You can download the latest release from the [releases page](https://github.com/Diniboy1123/usque/releases). For now, Android (`arm64`), Linux (`armv5`, `armv6`, `armv7`, `arm64`, `amd64`), Windows (`arm64`, `amd64`) and Darwin (`arm64`, `amd64`) binaries are provided. **However only the Linux `amd64` binary was tested.** If you have a different platform, you can build from source.
-
-Extract
+You can download the latest release from the [releases page](https://github.com/Diniboy1123/usque/releases). For now, Android (`arm64`), Linux (`armv5`, `armv6`, `armv7`, `ar
